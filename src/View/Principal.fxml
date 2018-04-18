@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.PrincipalController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="648.0" prefWidth="657.0" style="-fx-background-color: #20120F;">
+         <children>
+            <Label layoutX="14.0" layoutY="8.0" text="Minha Árvore Genealógica" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Button fx:id="btCadFamiliar" layoutX="54.0" layoutY="148.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="250.0" text="Cadastrar familiar" />
+            <Button fx:id="btVisualizar" layoutX="367.0" layoutY="148.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="250.0" text="Visualizar Árvore" />
+            <Button fx:id="btAlterarDados" layoutX="54.0" layoutY="390.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="250.0" text="Alterar Dados" />
+            <Button fx:id="btExcluirDados" layoutX="367.0" layoutY="390.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="250.0" text="Excluir Dados" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
