@@ -68,5 +68,8 @@ public class LoginController implements Initializable {
             alert.show();
         }
     }
+    public void cadastrar(){
+        
+    }
 }
 
