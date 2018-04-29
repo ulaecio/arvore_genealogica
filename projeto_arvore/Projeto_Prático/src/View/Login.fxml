@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+    <children>
+      <AnchorPane id="AnchorPane" layoutX="-6.0" prefHeight="421.0" prefWidth="826.0" style="-fx-background-color: #20120F;">
+      <children>
+      <Label fx:id="label" layoutX="204.0" layoutY="269.0" prefHeight="17.0" prefWidth="149.0" />
+            <AnchorPane layoutX="493.0" layoutY="39.0" prefHeight="343.0" prefWidth="298.0" style="-fx-background-color: #8C2B27;">
+               <children>
+            <TextField fx:id="textEmail" layoutX="28.0" layoutY="138.0" prefHeight="25.0" prefWidth="243.0" promptText="Digite seu e-mail" style="-fx-focus-traversable: #005546;" />
+            <PasswordField fx:id="textPassword" layoutX="28.0" layoutY="228.0" prefHeight="25.0" prefWidth="243.0" promptText="Digite sua senha" />
+            <Button fx:id="btEntrar" layoutX="218.0" layoutY="287.0" text="Entrar" />
+            <Label ellipsisString="" layoutX="28.0" layoutY="102.0" text="E-mail" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+            <Label layoutX="29.0" layoutY="188.0" text="Senha" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btCadastrar" layoutX="133.0" layoutY="287.0" mnemonicParsing="false" text="Cadastrar" textAlignment="CENTER" />
+                  <Label layoutX="82.0" layoutY="36.0" text="Acesse sua conta" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="42.0" layoutY="39.0" text="Bem-vindo a sua Árvore Genealógica" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="73.0" text="Acesse sua conta ou cadastre-se agora e faça parte dessa rede." textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+              <ImageView fitHeight="315.0" fitWidth="316.0" layoutX="74.0" layoutY="92.0" preserveRatio="true" smooth="false">
+                     <image>
+                        <Image url="@Imagens/arvore.png" />
+                     </image>
+                  </ImageView>
+            
+      </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

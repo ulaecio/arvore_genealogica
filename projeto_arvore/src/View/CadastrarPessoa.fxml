@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="396.0" prefWidth="504.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CadastrarPessoaController">
+   <children>
+      <AnchorPane id="AnchorPane" focusTraversable="true" layoutX="-7.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="396.0" prefWidth="518.0" style="-fx-background-color: #20120F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="14.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome Completo" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Text>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="21.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parentesco" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Text>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="39.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexo" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Text>
+            <TextField fx:id="txtNome" layoutX="172.0" layoutY="75.0" prefHeight="25.0" prefWidth="317.0" promptText="Digite seu nome completo">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Button fx:id="btCadastrar" layoutX="375.0" layoutY="332.0" mnemonicParsing="false" text="Cadastrar">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="btLimpar" layoutX="456.0" layoutY="332.0" mnemonicParsing="false" text="Limpar">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <RadioButton fx:id="btMasculino" layoutX="172.0" layoutY="199.0" mnemonicParsing="false" text="Masculino" textFill="#f8f8f8">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="btFeminino" layoutX="279.0" layoutY="199.0" mnemonicParsing="false" text="Feminino" textFill="#f5f5f5">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <Text fill="WHITE" layoutX="7.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastre seu parente:" textAlignment="CENTER" wrappingWidth="184.38671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField layoutX="172.0" layoutY="135.0" prefHeight="25.0" prefWidth="150.0" promptText="Digite sua data de nascimento" />
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="14.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Nascimento" textAlignment="CENTER">
+               <effect>
+                  <Blend />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtParentesco" layoutX="172.0" layoutY="257.0" prefHeight="25.0" prefWidth="165.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

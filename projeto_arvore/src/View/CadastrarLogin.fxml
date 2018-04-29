@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="462.0" prefWidth="405.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.CadastrarLoginController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="462.0" prefWidth="405.0" style="-fx-background-color: #20120F;">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="42.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Text>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="-2.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Nascimento" textAlignment="CENTER" wrappingWidth="154.685546875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Text>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="52.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Text>
+            <TextField fx:id="textEmail" layoutX="144.0" layoutY="103.0" prefHeight="25.0" prefWidth="247.0" promptText="Digite seu e-mail">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <PasswordField fx:id="txtDtNascimento" layoutX="145.0" layoutY="202.0" prefHeight="25.0" prefWidth="247.0" promptText="Digite sua data de nascimento">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </PasswordField>
+            <PasswordField fx:id="psSenha" layoutX="144.0" layoutY="301.0" prefHeight="25.0" prefWidth="247.0" promptText="Digite sua senha">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </PasswordField>
+            <Button fx:id="btLimpar" layoutX="328.0" layoutY="394.0" mnemonicParsing="false" onAction="#btnLimpar" text="Limpar">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="btCadastrar" layoutX="222.0" layoutY="394.0" mnemonicParsing="false" onAction="#btnCadastrar" text="Cadastrar">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label layoutX="52.0" layoutY="30.0" text="Cadastra-se para acessar sua Árvore Genealógica" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

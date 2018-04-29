@@ -1,0 +1,23 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class ConexaoBD {
+    
+    public Connection getConnection(){
+        try {
+            String nomeUsuario = "root";
+            String senhaUsuario = "admin";
+            String enderecoServidor = "localhost";
+            String nomeBanco = "swingapp";
+            return DriverManager.getConnection("jdbc://localhost://"+enderecoServidor+    
+                    "/"+nomeBanco, nomeUsuario, senhaUsuario);
+        } catch (SQLException ex) {
+            System.out.println("ERRO, NÃO ABRIR CONEXÃO!");
+            throw new RuntimeException(ex);
+        }
+                
+    }
+}
